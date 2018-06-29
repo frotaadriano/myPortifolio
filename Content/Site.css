@@ -22,3 +22,38 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+#horizontalPerfilCard {
+    display: none;
+}
+
+/*Quando a tela está pequena -(até 767)*/
+@media(max-width:767px) {
+
+    #horizontalPerfilCard {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.22);
+    }
+
+    #sidebar-wrapper {
+        display: none;
+    }
+    #wrapper.toggled {
+        padding-left: 0px;
+    }
+}
+/*Quando a tela está grande -(a partir de 768)*/
+@media(min-width:768px) {
+
+    #horizontalPerfilCard {
+        display: none;
+    }
+
+    #sidebar-wrapper {
+        display: block;
+        
+    }
+}
+
+    
