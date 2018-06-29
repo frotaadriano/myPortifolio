@@ -1,7 +1,9 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html">
 <head runat="server">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
@@ -10,6 +12,26 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+            @***************************************@
+
+            <div class="container-fluid" id="horizontalPerfilCard">
+                @Html.Partial("_PerfilCard")
+            </div>
+            @*<div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-brand"><a href="#">Header list</a></li>
+                            <li><a href="/">Home</a> </li>
+                            <li><a href="/Home/About">About</a> </li>
+                            <li><a href="/Home/Contact">Contact</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>*@
+
+
+            @**************************************@
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
